@@ -3,8 +3,62 @@ title: "Testing New Version"
 output: html_document
 date: "2024-07-08"
 ---
+(2021 - 2023)
+
+As you consider the questions below, please explain the approach you took, and what hypotheses you are trying to test. If there are potentially multiple interpretations for your conclusions, please call that out, and suggest which one you think is the most likely.
+
+Question 1: How would you measure patient retention for each therapists?
+Question 2: What conclusions can you arrive at about the overall retention of the therapists in this practice? Is this good or bad? Are there outliers? What actions would you recommend the practice take?
+Question 3: Does license or employment type influence retention?
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
+
+library("tidyverse")
+library("dplyr")
+library("tidyr")
+library("stringr")
+library("lubridate")
+library("ggplot2")
 ```
+
+
+```{r}
+# Path to datasets 
+clinicians <- read.csv("./datasets/clinicians.csv")
+visits <- read.csv("./datasets/visits.csv")
+```
+
+
+```{r}
+# Join dataframes together
+combined_df <- visits %>% 
+  left_join(clinicians, by = "clinician_id")
+```
+
+
+```{r}
+clinicians %>%  
+  group_by(employment_type) %>% 
+  summarise(count = n()) %>% 
+  mutate(percent = paste0(100 * count/sum(count), "%"))
+```
+
+```{r}
+# Numbers
+view <- combined_df %>% 
+  group_by(employment_type) %>% 
+  summarize( count = n() )
+```
+
+
+"patient_id"      "visit_id"        "visit_date"     
+ "clinician_id"    "license_role"    "employment_type"
+
+```{r}
+view <- combined_df %>% 
+  group_by(patient_id) %>% 
+  count()
+```
+
 
