@@ -85,8 +85,6 @@ return_clinician <- combined_df %>%
   summarize(freq_pt_clinician = n())  %>%
   mutate(return_clinician_num = ifelse(freq_pt_clinician > 1, 1, 0)) %>% 
   mutate(return_clinician = ifelse(freq_pt_clinician > 1, TRUE, FALSE))
-
-return_clinician
 ```
 
 ```{r}
