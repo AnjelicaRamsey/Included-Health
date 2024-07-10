@@ -1,3 +1,28 @@
+**Tableau Dashboard Overview**
+
+The Tableau dashboard is designed to provide a comprehensive visualization of therapist retention metrics and trends. Key features include interactive filters for date range, employment type, and license, allowing users to explore the data dynamically.
+
+*Filter Options:*
+Date Range: Users can select specific timeframes to analyze retention trends.
+Employment Type: Allows filtering by different categories such as full-time, part-time, etc.
+License: Enables comparison of retention metrics across different therapist licenses.
+
+Non-Retained Volumes by License:
+This chart visualizes the absolute number of non-retained patients categorized by therapist license. It helps identify which license types have higher rates of non-retained patients.
+
+Quarterly Retention Rate Trend Line Plot:
+Displays a trend line plot showing the quarterly retention rates over time. This visual highlights trends or fluctuations in therapist retention rates across quarters.
+
+Heatmap of Non-Retained Rates by Quarter and Grouping Subcategory:
+Utilizes a heatmap to track non-retained rates across each quarter, categorized by therapist license and employment type. This heatmap provides a detailed view of how retention rates vary by these categories over time.
+
+Volume Numbers and Patient Metrics:
+Offers a quick snapshot of key metrics such as total volume numbers, distinct patients seen by therapists, and the frequency of patient returns to individual clinicians. This section provides a simple overview of patient engagement and retention patterns.
+
+Boxplot of Non-Retained Rates for 2023:
+Focuses on the 2023 calendar year to visualize individual clinical outliers in non-retained rates. The boxplot identifies therapists with notably high or low retention rates compared to their peers, facilitating targeted investigation into potential factors contributing to these outliers.
+
+
 **Approach and Hypotheses:**
 
 I aimed to consolidate data by clinician_id to integrate all clinician details with each unique visit conducted. Initially, I utilized R for data wrangling, focusing on metrics such as patient return rates after their first visit and provider switching. These metrics were then transferred into Tableau for visualization.
