@@ -1,6 +1,6 @@
 **Tableau Dashboard Overview**
 
-[Clinician Retention Link](https://public.tableau.com/views/TelemedicineCaseStudy_17205633182660/RetentionDashboard?:language=en-US&publish=yes&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link)
+[Clinician Retention Dashboard Link](https://public.tableau.com/views/TelemedicineCaseStudy_17205633182660/RetentionDashboard?:language=en-US&publish=yes&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link)
 
 The Tableau dashboard is designed to provide a comprehensive visualization of therapist retention metrics and trends. Key features include interactive filters for date range, employment type, and license, allowing users to explore the data dynamically.
 
