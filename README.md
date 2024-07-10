@@ -1,5 +1,3 @@
-
-
 **Approach and Hypotheses:**
 
 I aimed to consolidate data by clinician_id to integrate all clinician details with each unique visit conducted. Initially, I utilized R for data wrangling, focusing on metrics such as patient return rates after their first visit and provider switching. These metrics were then transferred into Tableau for visualization.
